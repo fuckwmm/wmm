@@ -46,8 +46,8 @@
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/v2ray/cool/google.crt",
-                            "keyFile": "/etc/v2ray/cool/google.key"
+                            "certificateFile": "/usr/cool/google.crt",
+                            "keyFile": "/usr/cool/google.key"
                         }
                     ]
                 }
