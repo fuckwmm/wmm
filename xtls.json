@@ -18,7 +18,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "wmmaa.ml",
+                        "address": "wmma.ml",
                         "port": 443,
                         "users": [
                             {
@@ -35,7 +35,7 @@
                 "network": "tcp",
                 "security": "xtls",
                 "xtlsSettings": {
-                    "serverName": "wmmaa.ml"
+                    "serverName": "wmma.ml"
                 }
             }
         }
