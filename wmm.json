@@ -16,26 +16,6 @@
                     }
                 ],
                 "decryption": "none",
-                "fallbacks": [
-                    {
-                        "dest": 1236
-                    },
-                    {
-                        "path": "/websocket1",
-                        "dest": 1234,
-                        "xver": 1
-                    },
-                    {
-                        "path": "/vmesstcp2",
-                        "dest": 2345,
-                        "xver": 1
-                    },
-                    {
-                        "path": "/vmessws3",
-                        "dest": 3456,
-                        "xver": 1
-                    }
-                ]
             },
             "streamSettings": {
                 "network": "tcp",
@@ -53,81 +33,7 @@
                 }
             }
         },
-        {
-            "port": 1234,
-            "listen": "127.0.0.1",
-            "protocol": "vless",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc",
-                        "level": 0,
-                        "email": "love@v2fly.org"
-                    }
-                ],
-                "decryption": "none"
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "acceptProxyProtocol": true,
-                    "path": "/websocket1"
-                }
-            }
-        },
-        {
-            "port": 2345,
-            "listen": "127.0.0.1",
-            "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc",
-                        "level": 0,
-                        "email": "love@v2fly.org"
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "none",
-                "tcpSettings": {
-                    "acceptProxyProtocol": true,
-                    "header": {
-                        "type": "http",
-                        "request": {
-                            "path": [
-                                "/vmesstcp2"
-                            ]
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "port": 3456,
-            "listen": "127.0.0.1",
-            "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc",
-                        "level": 0,
-                        "email": "love@v2fly.org"
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "acceptProxyProtocol": true,
-                    "path": "/vmessws3"
-                }
-            }
-        }
-    ],
+      ],
     "outbounds": [
         {
             "protocol": "freedom"
