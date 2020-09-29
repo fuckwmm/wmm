@@ -9,7 +9,11 @@ VLESS over TCP with XTLS + 回落 & 分流 to WHATEVER（终极配置）
 客户端可以同时通过下列方式连接到服务器，其中 WS 都可以通过 CDN
 
 VLESS over TCP with XTLS
+
 VLESS over TCP with TLS
+
 VLESS over WS with TLS
+
 VMess over TCP with TLS
+
 VMess over WS with TLS
