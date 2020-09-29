@@ -18,11 +18,11 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "wmma.ml",
+                        "address": "你的域名",
                         "port": 443,
                         "users": [
                             {
-                                "id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc",
+                                "id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc", // uuid你的
                                 "flow": "xtls-rprx-origin",
                                 "encryption": "none",
                                 "level": 0
@@ -35,7 +35,7 @@
                 "network": "tcp",
                 "security": "xtls",
                 "xtlsSettings": {
-                    "serverName": "wmma.ml"
+                    "serverName": "你的域名"
                 }
             }
         }
