@@ -18,11 +18,11 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "example.com", // 换成你的域名或服务器 IP（发起请求时无需解析域名了）
+                        "address": "wmma.ml",
                         "port": 443,
                         "users": [
                             {
-                                "id": "", // 填写你的 UUID
+                                "id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc",
                                 "flow": "xtls-rprx-origin",
                                 "encryption": "none",
                                 "level": 0
@@ -33,9 +33,9 @@
             },
             "streamSettings": {
                 "network": "tcp",
-                "security": "xtls", // 需要使用 XTLS
+                "security": "xtls",
                 "xtlsSettings": {
-                    "serverName": "example.com" // 换成你的域名
+                    "serverName": "wmma.ml"
                 }
             }
         }
