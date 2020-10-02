@@ -180,7 +180,7 @@ cat > /usr/local/etc/v2ray/config.json<<-EOF
     "inbounds": [
         {
             "listen": "0.0.0.0", 
-            "port": 443, 
+            "port": 3000, 
             "protocol": "vless", 
             "settings": {
                 "clients": [
