@@ -26,8 +26,8 @@
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "/usr/cool/google.crt",
-                            "keyFile": "/usr/cool/google.key"
+                            "certificateFile": "/sorry/cetificate.crt",
+                            "keyFile": "/sorry/private.key"
                         }
                     ]
                 }
