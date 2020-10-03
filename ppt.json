@@ -14,5 +14,5 @@
         {"protocol": "freedom","tag": "direct","settings": {}},
         {"protocol": "socks","tag": "sockstor","settings": {"servers": [{"address": "127.0.0.1","port": 9050}]}},
         {"protocol": "blackhole","tag": "blocked","settings": {}}
-    ],
+    ]
 }
