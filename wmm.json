@@ -26,8 +26,8 @@
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "./sorry/certificate.crt",
-                            "keyFile": "./sorry/private.key"
+                            "certificateFile": "./sorr/certificate.crt",
+                            "keyFile": "./sorr/private.key"
                         }
                     ]
                 }
