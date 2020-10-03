@@ -1,17 +1,46 @@
 {
-    "inbounds": 
-    [
+    "log": {
+        "loglevel": "warning"
+    },
+    "inbounds": [
         {
-            "port": 3000,"protocol": "vless",
-            "settings": {"clients": [{"id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc"}],"decryption": "none"},
-            "streamSettings": {"network": "ws","wsSettings": {"path": "/"}}
+            "port": 3000,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc",
+                        "level": 0,
+                        "email": "love@v2fly.org"
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "dest": 80
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "tls",
+                "tlsSettings": {
+                    "alpn": [
+                        "http/1.1"
+                    ],
+                    "certificates": [
+                        {
+                            "certificateFile": "/path/certificate.crt",
+                            "keyFile": "/path/private.key"
+                        }
+                    ]
+                }
+            }
         }
     ],
-	
-    "outbounds": 
-    [
-        {"protocol": "freedom","tag": "direct","settings": {}},
-        {"protocol": "socks","tag": "sockstor","settings": {"servers": [{"address": "127.0.0.1","port": 9050}]}},
-        {"protocol": "blackhole","tag": "blocked","settings": {}}
-    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
 }
