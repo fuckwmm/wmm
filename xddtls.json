@@ -9,7 +9,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "2b17fd99-71ea-484e-b48b-72c0d72cfbbc",
                         "flow": "xtls-rprx-origin",
                         "level": 0,
                         "email": "love@v2fly.org"
@@ -18,20 +18,20 @@
                 "decryption": "none",
                 "fallbacks": [
                     {
-                        "dest": 80 // 或者回落到其它也防探测的代理
+                        "dest": 80
                     },
                     {
-                        "path": "/websocket", // 必须换成自定义的 PATH
+                        "path": "/",
                         "dest": 1234,
                         "xver": 1
                     },
                     {
-                        "path": "/vmesstcp", // 必须换成自定义的 PATH
+                        "path": "/tcp",
                         "dest": 2345,
                         "xver": 1
                     },
                     {
-                        "path": "/vmessws", // 必须换成自定义的 PATH
+                        "path": "/ws",
                         "dest": 3456,
                         "xver": 1
                     }
@@ -60,7 +60,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "2b17fd99-71ea-484e-b48b-72c0d72cfbbc",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
@@ -71,8 +71,8 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "acceptProxyProtocol": true, // 提醒：若你用 Nginx/Caddy 等反代 WS，需要删掉这行
-                    "path": "/websocket" // 必须换成自定义的 PATH，需要和分流的一致
+                    "acceptProxyProtocol": true,
+                    "path": "/"
                 }
             }
         },
@@ -83,7 +83,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "2b17fd99-71ea-484e-b48b-72c0d72cfbbc",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
@@ -98,7 +98,7 @@
                         "type": "http",
                         "request": {
                             "path": [
-                                "/vmesstcp" // 必须换成自定义的 PATH，需要和分流的一致
+                                "/tcp"
                             ]
                         }
                     }
@@ -112,7 +112,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "2b17fd99-71ea-484e-b48b-72c0d72cfbbc",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
@@ -122,8 +122,8 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "acceptProxyProtocol": true, // 提醒：若你用 Nginx/Caddy 等反代 WS，需要删掉这行
-                    "path": "/vmessws" // 必须换成自定义的 PATH，需要和分流的一致
+                    "acceptProxyProtocol": true,
+                    "path": "/ws"
                 }
             }
         }
