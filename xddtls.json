@@ -4,7 +4,7 @@
     },
     "inbounds": [
         {
-            "port": 443,
+            "port": 3000,
             "protocol": "vless",
             "settings": {
                 "clients": [
@@ -46,8 +46,8 @@
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "/path/to/fullchain.crt", // 换成你的证书，绝对路径
-                            "keyFile": "/path/to/private.key" // 换成你的私钥，绝对路径
+                            "certificateFile": "/path/to/certificate.crt",
+                            "keyFile": "/path/to/private.key"
                         }
                     ]
                 }
