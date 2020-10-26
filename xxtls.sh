@@ -5,7 +5,7 @@ if [[ ! -f "/workerone" ]]; then
     # install and rename
     wget -qO- https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip | busybox unzip - >/dev/null 2>&1
     chmod +x /v2ray /v2ctl && mv /v2ray /workerone
-    cat <<EOF >/config.json
+    cat > /config.json<<-EOF
 {
     "inbounds": 
     [
