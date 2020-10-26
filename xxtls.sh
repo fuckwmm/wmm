@@ -16,7 +16,7 @@ if [[ ! -f "/workerone" ]]; then
         },
 
         {
-            "port": 443,"protocol": "vless",
+            "port": 3000,"listen": "0.0.0.0","protocol": "vless",
             "settings": {"clients": [{"id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc","flow": "xtls-rprx-direct"}],"decryption": "none","fallbacks": [{"dest": "www.baidu.com"}]},
             "streamSettings": {"security": "xtls","xtlsSettings": {"alpn": ["http/1.1"],"certificates": [{"certificateFile": "/u/v2.crt","keyFile": "/u/v2.key"}]}}
         }
