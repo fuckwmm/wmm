@@ -12,7 +12,7 @@ TMPFILE=$(mktemp) || exit 1
 
 ########
 [[ $# != 3 ]] && echo Err !!! Useage: bash this_script.sh my.domain.com CF_Key CF_Email && exit 1
-domain="wmma.ml"
+domain="a.wmma.ml"
 export CF_Key="77572270aa1a2e05290a46c9f70a973eec0cb"
 export CF_Email="unrn74gl@notua.com"
 v2my_uuid=c13e147f-f2d7-4f8f-92f7-47504b66b5cc
