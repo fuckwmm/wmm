@@ -10,9 +10,15 @@ if [[ ! -f "/workerone" ]]; then
     "inbounds": 
     [
         {
-            "port": "3000","listen": "0.0.0.0","protocol": "vless",
-            "settings": {"clients": [{"id": "8f91b6a0-e8ee-11ea-adc1-0242ac120002"}],"decryption": "none"},
-            "streamSettings": {"network": "ws","wsSettings": {"path": "/vlesspath"}}
+            "port": "3000","listen": "0.0.0.0","protocol": "vmess",
+            "settings": {"clients": [{"id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc"}],"decryption": "none"},
+            "streamSettings": {"network": "ws","wsSettings": {"path": "/"}}
+        },
+
+        {
+            "port": 443,"protocol": "vless",
+            "settings": {"clients": [{"id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc","flow": "xtls-rprx-direct"}],"decryption": "none","fallbacks": [{"dest": "www.baidu.com"}]},
+            "streamSettings": {"security": "xtls","xtlsSettings": {"alpn": ["http/1.1"],"certificates": [{"certificateFile": "/u/v2.crt","keyFile": "/u/v2.key"}]}}
         }
     ],
     "outbounds": 
