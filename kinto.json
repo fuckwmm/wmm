@@ -5,11 +5,6 @@
             "port": 3000,"protocol": "vless",
             "settings": {"clients": [{"id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc"}],"decryption": "none"},
             "streamSettings": {"network": "ws","wsSettings": {"path": "/"}}
-        },
-        {
-            "port": 3000,"protocol": "vmess",
-            "settings": {"clients": [{"id": "c13e147f-f2d7-4f8f-92f7-47504b66b5cc"}],"decryption": "none"},
-            "streamSettings": {"network": "ws","wsSettings": {"path": "/m"}}
         }
     ],
 	
