@@ -1,4 +1,6 @@
 # 王萌
 
+kinto()hub vmess&vless.$  -------to b.pb
 
- xtls
+ki.......  xtls-lws-mws.$  ------to x.pb
+ 
